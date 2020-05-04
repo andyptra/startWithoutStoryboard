@@ -7,7 +7,7 @@ start xcode project without storyboard and XIB as Main Screen
   At general tab -> Deploy Info -> main interface field (delete and leave blank)
 - Remove  the key Storyboard Name <br/>
   At info tab -> Application Scene Manifest (expand) ->  Scene Configuration (expand) -> Application Session Role (expand) -> First Item 
-- Add this code inside SceneDelegate.swift<br/>
+- Add this code inside SceneDelegate.swift<br/> this include navigationController
 ```swift
    guard let windowScene = (scene as? UIWindowScene) else { return }
            window = UIWindow(frame: windowScene.coordinateSpace.bounds)
